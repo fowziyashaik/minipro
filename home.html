@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Grievance Redressal System</title>
+
+<link rel="stylesheet" 
+href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css">
+
+<style>
+body {
+    background: linear-gradient(135deg, #e6f2ff, #ffffff);
+    min-height: 100vh;
+}
+
+body::before {
+    content: "";
+    position: fixed;
+    width: 300px;
+    height: 300px;
+    background: rgba(0, 123, 255, 0.2);
+    filter: blur(120px);
+    top: 10%;
+    left: 20%;
+    z-index: -1;
+}
+
+.rounded-25 {
+    border-radius: 25px;
+}
+</style>
+</head>
+
+<body>
+
+
+<div class="container-fluid p-3">
+    <h3 class="bg-dark text-white text-center py-3 mb-0 rounded-25">
+        Grievance Redressal
+    </h3>
+</div>
+
+<div class="container-fluid">
+<div class="row">
+
+
+<div class="col-md-5 d-flex align-items-center justify-content-center py-5">
+
+<marquee direction="up" scrollamount="15" height="500"  style="margin:80px;">
+
+
+   
+    <div class="card shadow-lg border-0 rounded-25 mb-4" style="max-width:350px;">
+        <img src="Grievance-Redressal-Cell.jpg"
+             class="card-img-top"
+             style="height:300px; object-fit:cover;">
+        <div class="card-body text-center">
+            <h5 class="card-title">Grievance Cell</h5>
+            <p class="card-text">
+                We are here to resolve your concerns quickly and efficiently.
+            </p>
+        </div>
+    </div>
+
+    
+    <div class="card shadow-lg border-0 rounded-25 mb-4" style="max-width:350px;">
+        <img src="image.png"
+             class="card-img-top"
+             style="height:300px; object-fit:cover;">
+    </div>
+
+   
+    <div class="card shadow-lg border-0 rounded-25" style="max-width:350px;">
+        <div class="card-body text-center">
+            <h5 class="card-title text-primary">Why Choose Us?</h5>
+            <p class="card-text">
+                ✔ Quick Response <br>
+                ✔ Transparent Process <br>
+                ✔ 24/7 Support
+            </p>
+        </div>
+    </div>
+
+</marquee>
+
+</div>
+
+
+<div class="col-md-7 py-4">
+
+<div class="text-right  mb-4">
+    <a href="status.html" class="btn btn-outline-danger rounded-25">Status</a>
+    <a href="admin.html" class="btn btn-outline-success rounded-25 ml-2">Admin</a>
+</div>
+
+<div class="row justify-content-center">
+<div class="col-md-8">
+
+<div class="card shadow border-0 rounded-25">
+<div class="card-body">
+
+<h5 class="text-center mb-3">Write your Grievance here</h5>
+<p>Please fill out all fields</p>
+
+<form action="grievanceaction.jsp" method="post">
+
+<select   name="usertype" class="form-control mb-3 text-center rounded-25">
+<option >--- User Type ---</option>
+<option>Student</option>
+<option>Faculty</option>
+</select>
+
+<input type="text" name="userid" class="form-control mb-3 rounded-25"
+placeholder="Roll Number or Faculty ID" required>
+
+<input type="text" name="fullname" class="form-control mb-3 rounded-25"
+placeholder="Full Name">
+
+<select  name= "gender" class="form-control form-select  mb-3 text-center rounded-25">
+<option>--- Select Gender ---</option>
+<option>Male</option>
+<option>Female</option>
+</select>
+
+
+                 <p>Fill E-mail ID Field to get reply</p>  
+                
+                    <input type="email" name="emailid" placeholder="youremail@domain" class="form-control mb-3 rounded-25" required>
+                
+                    
+
+<textarea  name="grievance" class="form-control mb-3 rounded-25"
+rows="4"
+placeholder="Write your Grievance"></textarea>
+
+<div class="text-center">
+<button class="btn btn-primary rounded-25">
+Submit
+</button>
+</div>
+
+</form>
+
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+</div>
+
+
+<footer class="bg-dark text-white text-center py-3 mt-1 mb-5 rounded-25">
+    © 2026 Grievance Redressal System | All Rights Reserved
+</footer>
+
+</body>
+</html>
